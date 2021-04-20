@@ -6,10 +6,10 @@ import { Component } from '@angular/core';
 })
 export class ListadoComponent {
   heroes: string[] = ['Spiderman', 'Ironman', 'Hulk', 'Thor', 'Capitan America'];
-  heroeBorrado: string = "...";
+  heroeBorrado: string = '';
 
   borrarHeroe(){
-    const hb = this.heroes.pop();
+    const hb = this.heroes.pop() || '';
     this.heroeBorrado = hb;
   }
 }
