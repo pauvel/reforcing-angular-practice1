@@ -12,4 +12,8 @@ export class MainPageComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  agregar(){
+    console.log('Test for ng submit.')
+  }
+
 }
